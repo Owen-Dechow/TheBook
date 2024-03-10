@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block tags %}
+  {% for tag in tags %}
+    <a href="/?tag={{ tag }}">#{{ tag }}</a>
+  {% endfor %}
+{% endblock %}
+{% block style %}
+  <style>
+    .recipes {
+      columns: 2;
+      gap: 50px;
+    }
+    
+    .recipes li {
+      margin-bottom: 5px;
+    }
+    
+    @media (max-width: 800px) {
+      .recipes {
+        columns: 1;
+      }
+    }
+  </style>
+{% endblock %}
+{% block body %}
+  <ol class="recipes">
+    {% for recipe in recipes %}
+      <li>
+        <a href="/r/{{ recipe.id }}">{{ recipe }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+{% endblock %}

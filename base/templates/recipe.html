@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load md_safe %}
+
+{% block tags %}
+  <a href="/?tag={{ recipe.creator }}">#{{ recipe.creator }}</a>
+  {% for tag in recipe.tags %}
+    <a href="/?tag={{ tag }}">#{{ tag }}</a>
+  {% endfor %}
+{% endblock %}
+
+{% block style %}
+  <style>
+    .instructions {
+      padding: 10px;
+      overflow-x: scroll;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+    
+    .instructions a {
+      color: dodgerblue;
+    }
+    
+    .instructions md-block > p {
+      margin-top: 0;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <h1><a href="/r/{{ recipe.id }}">{{ recipe }}</a></h1>
+
+  <h2>Ingredients:</h2>
+  <ul>
+    {% for ingredient in recipe.Ingredients %}
+      <li>{{ ingredient }}</li>
+    {% endfor %}
+  </ul>
+
+  <div class="instructions">
+    <md-block>{{ recipe.instructions|md_safe }}</md-block>
+  </div>
+{% endblock %}

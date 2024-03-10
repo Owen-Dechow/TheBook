@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book</title>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+
+    <style>
+      body {
+        font-family: monospace;
+        background-color: #222;
+        margin-inline: auto;
+        color: #eee;
+        max-width: 800px;
+        width: calc(100% - 20px);
+      }
+      
+      a {
+        color: inherit;
+      }
+      
+      a:hover {
+        text-decoration: none;
+      }
+      
+      nav {
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+      .tags {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 50px;
+        columns: 4;
+      }
+      .tags a {
+        display: block;
+        margin-bottom: 2px;
+      }
+      
+      @media (max-width: 800px) {
+        .tags {
+          columns: 3;
+        }
+      
+        @media (max-width: 600px) {
+          .tags {
+            columns: 2;
+          }
+      
+          @media (max-width: 450px) {
+            .tags {
+              columns: 1;
+            }
+      
+            .tags a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    </style>
+    {% block style %}
+
+    {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <span>The Book</span>
+      <a href="/">Home</a>
+    </nav>
+    <div class="tags">
+      {% block tags %}
+
+      {% endblock %}
+    </div>
+    <main>
+      {% block body %}
+
+      {% endblock %}
+    </main>
+  </body>
+</html>

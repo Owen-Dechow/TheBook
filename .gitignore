@@ -1,0 +1,6 @@
+thebook.pdf
+thebook.xml
+venv/
+db.sqlite3
+data_import.py
+__pycache__/
