@@ -67,4 +67,4 @@ DATABASES = {}
 
 LANGUAGE_CODE = "en-us"
 
-django_heroku.settings(locals(), staticfiles=False)
+django_heroku.settings(locals(), staticfiles=False, databases=False)
