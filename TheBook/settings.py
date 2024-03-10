@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import environ
+import django_heroku
 
 env = environ.Env()
 env.read_env()
@@ -65,3 +66,5 @@ WSGI_APPLICATION = "TheBook.wsgi.application"
 DATABASES = {}
 
 LANGUAGE_CODE = "en-us"
+
+django_heroku.settings(locals(), staticfiles=False)
