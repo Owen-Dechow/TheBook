@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block tags %}
+  <a href="/">clear</a>
   {% for tag in tags %}
     <a href="/t/{{ tag }}">#{{ tag }}</a>
   {% endfor %}

@@ -12,8 +12,8 @@ def home(request: WSGIRequest, tag=None):
     else:
         recipes = R.all()
 
-    tags = {""}
-    creators = {}
+    tags = set()
+    creators = dict()
     for recipe in recipes:
         for tag in recipe.tags:
             tags.add(tag)
