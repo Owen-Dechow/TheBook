@@ -2,7 +2,7 @@
 
 {% block tags %}
   {% for tag in tags %}
-    <a href="/?tag={{ tag }}">#{{ tag }}</a>
+    <a href="/t/{{ tag }}">#{{ tag }}</a>
   {% endfor %}
 {% endblock %}
 {% block style %}

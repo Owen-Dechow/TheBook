@@ -5,9 +5,9 @@ from .data.data import Recipe as R
 
 
 # Create your views here.
-def home(request: WSGIRequest):
+def home(request: WSGIRequest, tag=None):
 
-    if tag := request.GET.get("tag"):
+    if tag:
         recipes = R.filter(lambda x: tag in x.tags or tag in x.creator)
     else:
         recipes = R.all()

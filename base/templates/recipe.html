@@ -2,12 +2,12 @@
 {% load md_safe %}
 
 {% block tags %}
-  <a href="/?tag=">#</a>
+  <a href="/">#</a>
   {% if recipe.creator %}
-    <a href="/?tag={{ recipe.creator }}">#{{ recipe.creator }}</a>
+    <a href="/t/{{ recipe.creator }}">#{{ recipe.creator }}</a>
   {% endif %}
   {% for tag in recipe.tags %}
-    <a href="/?tag={{ tag }}">#{{ tag }}</a>
+    <a href="/t/{{ tag }}">#{{ tag }}</a>
   {% endfor %}
 {% endblock %}
 
