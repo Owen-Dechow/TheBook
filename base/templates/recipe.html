@@ -2,6 +2,7 @@
 {% load md_safe %}
 
 {% block tags %}
+  <a href="/?tag=">#</a>
   {% if recipe.creator %}
     <a href="/?tag={{ recipe.creator }}">#{{ recipe.creator }}</a>
   {% endif %}
@@ -28,6 +29,14 @@
       margin-top: 0;
     }
   </style>
+
+  {% if recipe.tags|length < 6 %}
+    <style>
+      .tags a {
+        display: inline-block;
+      }
+    </style>
+  {% endif %}
 {% endblock %}
 
 {% block body %}

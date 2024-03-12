@@ -12,13 +12,20 @@ def home(request: WSGIRequest):
     else:
         recipes = R.all()
 
-    tags = set()
+    tags = {""}
+    creators = {}
     for recipe in recipes:
         for tag in recipe.tags:
             tags.add(tag)
 
-        if recipe.creator:
-            tags.add(recipe.creator)
+        if recipe.creator in creators:
+            creators[recipe.creator] += 1
+        else:
+            creators[recipe.creator] = 1
+
+    for creator, instances in creators.items():
+        if instances > 1:
+            tags.add(creator)
 
     context = {"recipes": sorted(recipes, key=lambda x: x.id), "tags": sorted(tags)}
     return render(request, "home.html", context)
