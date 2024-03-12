@@ -18,7 +18,7 @@ def home(request: WSGIRequest, tag=None):
         for tag in recipe.tags:
             tags.add(tag)
 
-        if recipe.creator in creators:
+        if recipe.creator in creators and recipe.creator:
             creators[recipe.creator] += 1
         else:
             creators[recipe.creator] = 1
