@@ -20,7 +20,7 @@ def home(request: WSGIRequest):
         if recipe.creator:
             tags.add(recipe.creator)
 
-    context = {"recipes": sorted(recipes, key=lambda x: x.name), "tags": sorted(tags)}
+    context = {"recipes": recipes, "tags": sorted(tags)}
     return render(request, "home.html", context)
 
 

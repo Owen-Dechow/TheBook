@@ -1,1 +1,34 @@
-{"instructions": "Remove vegetables to a warm platter and the corned beef to a cutting board, slicing the corned beef\nacross the grain. Above vegetables will serve 4. \n*(Rev. 3/16/99)*\n\n*(A mixture if 1/4 cup of sour cream and 1 1/2 tsp horseradish may be served on the side.)*", "ingredients": ["3 lb corned beef brisket with spices", "3/4 cup boiling water", "1 onion, peeled", "8 whole cloves", "1 bay leaf", "8 carrots, peeled and halved, divided", "3 potatoes, peeled and quartered", "2 turnips, peeled and sliced 1/2 inch", "1/2 head cabbage, cut in 2 inch wedges", "2 parsnips, peeled, halved, cut in 1/2 inch strips", "12 pearl onions, peeled", "Place corned beef fat side up with its spices and brine in a Dutch oven. Add the onion stuck with", "cloves along with 2 of the carrots and the bay leaf. Pour the boiling water over the corned beef. Cover and", "place in a 350 F oven for about 4 hours or until fork tender.", "Peel and prepare all the remaining vegetables so they are ready for cooking at about 45 minutes before", "cooking time is up. You will need a 1 1/2 quart pot to cook the potatoes in salted water and a 6 quart pot half", "full of water for all the other vegetables. Bring both pots to a boil and reduce to a simmer.", "Add the vegetables to the pots according to the following schedule of times to cook:", "Carrots 30 min", "Cabbage 30 min", "Potatoes 25 min", "Onions 20 min", "Parsnips 15 min", "Turnips 10 min"], "name": "Corned Beef And Cabbage", "creator": "Mary and Jim Decker", "tags": ["beef"]}
+{
+    "instructions": "Remove vegetables to a warm platter and the corned beef to a cutting board, slicing the corned beef\nacross the grain. Above vegetables will serve 4. \n*(Rev. 3/16/99)*\n\n*(A mixture if 1/4 cup of sour cream and 1 1/2 tsp horseradish may be served on the side.)*",
+    "ingredients": [
+        "3 lb corned beef brisket with spices",
+        "3/4 cup boiling water",
+        "1 onion, peeled",
+        "8 whole cloves",
+        "1 bay leaf",
+        "8 carrots, peeled and halved, divided",
+        "3 potatoes, peeled and quartered",
+        "2 turnips, peeled and sliced 1/2 inch",
+        "1/2 head cabbage, cut in 2 inch wedges",
+        "2 parsnips, peeled, halved, cut in 1/2 inch strips",
+        "12 pearl onions, peeled",
+        "Place corned beef fat side up with its spices and brine in a Dutch oven. Add the onion stuck with",
+        "cloves along with 2 of the carrots and the bay leaf. Pour the boiling water over the corned beef. Cover and",
+        "place in a 350 F oven for about 4 hours or until fork tender.",
+        "Peel and prepare all the remaining vegetables so they are ready for cooking at about 45 minutes before",
+        "cooking time is up. You will need a 1 1/2 quart pot to cook the potatoes in salted water and a 6 quart pot half",
+        "full of water for all the other vegetables. Bring both pots to a boil and reduce to a simmer.",
+        "Add the vegetables to the pots according to the following schedule of times to cook:",
+        "Carrots 30 min",
+        "Cabbage 30 min",
+        "Potatoes 25 min",
+        "Onions 20 min",
+        "Parsnips 15 min",
+        "Turnips 10 min"
+    ],
+    "name": "Corned Beef And Cabbage",
+    "creator": "Mary & Jim Decker",
+    "tags": [
+        "beef"
+    ]
+}
